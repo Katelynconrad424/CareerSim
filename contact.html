@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,13 +16,43 @@
       </ul>
     </nav>
     <main>
-      <h3>This is the Contact Page</h3>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit impedit
-        ut voluptatum ducimus praesentium dolorem est assumenda itaque sed,
-        accusantium repellendus non porro! Dolorem alias facilis, molestias
-        repellendus nostrum nulla!
-      </p>
+      <h1>Contact Me</h1>
+      <form>
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td>
+              <input type="text" name="fname" />
+            </td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td>
+              <input type="text" name="lname" />
+            </td>
+          </tr>
+          <tr>
+            <td>Message:</td>
+            <td>
+              <input
+                type="text"
+                placeholder="Type your message"
+                name="message"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <form action="/submit-form" method="post">
+        <!-- Other form elements -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </form>
+      <button type="submit">Submit</button>
     </main>
+
+    <footer>
+      <h2>This is the Footer</h2>
+    </footer>
   </body>
 </html>

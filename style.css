@@ -1,10 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
+}
+
+#container {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 25px;
 }
 
 main {
   margin-left: 20px;
   margin-right: 20px;
+  height: 100%;
 }
 
 h1 {
@@ -30,6 +44,41 @@ h1 {
 .navbar a:hover {
   background-color: rgb(39, 39, 39);
 }
+
 .navbar li {
   float: left;
+}
+
+aside {
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+
+section {
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+
+article {
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+
+footer {
+  display: block;
+  clear: both;
+  background-color: rgb(83, 91, 97);
+  text-align: center;
+  padding: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  aside,
+  section,
+  article {
+    width: 100%;
+  }
 }
