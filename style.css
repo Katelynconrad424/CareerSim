@@ -22,12 +22,13 @@ main {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
+  color: rgb(222, 182, 132);
 }
 
 .navbar ul {
   list-style-type: none;
-  background-color: rgb(62, 62, 62);
+  background-color: rgb(64, 160, 220);
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -42,11 +43,11 @@ h1 {
 }
 
 .navbar a:hover {
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(13, 98, 144);
 }
 
 .navbar li {
-  float: left;
+  float: right;
 }
 
 aside {
@@ -67,10 +68,27 @@ article {
   padding: 10px;
 }
 
+table {
+  background-color: bisque;
+  text-align: center;
+}
+
+img {
+  size: 10px;
+}
+
+input[type="text"] {
+  background-color: white;
+  background-image: url("searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
 footer {
   display: block;
   clear: both;
-  background-color: rgb(83, 91, 97);
+  background-color: rgb(64, 160, 220);
   text-align: center;
   padding: 25px;
 }
