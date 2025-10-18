@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerSim</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Katelyn Conrad's CareerSim</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Contact Me</h1>
+      <img
+        src="https://media.istockphoto.com/id/2052093189/vector/blue-mail-icon-mail-button-vector.jpg?s=612x612&w=0&k=20&c=nUYbs8zEExhLHw2yYD7sX59KdFPoXMsTUyX5qbgeIVU="
+        width="200px"
+      />
+      <form>
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td>
+              <input type="text" name="fname" />
+            </td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td>
+              <input type="text" name="lname" />
+            </td>
+          </tr>
+          <tr>
+            <td>Message:</td>
+            <td>
+              <input
+                type="text"
+                placeholder="Type your message"
+                name="message"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <form action="/submit-form" method="post">
+        <!-- Other form elements -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </form>
+      <button type="submit">Submit</button>
+    </main>
+
+    <footer>
+      <h2>This is the Footer</h2>
+    </footer>
+  </body>
+</html>

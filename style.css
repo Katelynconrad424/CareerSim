@@ -1,32 +1,102 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+* {
+  box-sizing: border-box;
 }
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
+
+body {
+  margin: 0px;
+}
+
+#container {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 25px;
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+}
+
+h1 {
+  text-align: left;
+  color: rgb(222, 182, 132);
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: rgb(64, 160, 220);
+  padding: 0px;
+  margin: 0px;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04aa6d;
+.navbar a {
   color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: rgb(13, 98, 144);
+}
+
+.navbar li {
+  float: right;
+}
+
+aside {
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+
+section {
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+
+article {
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+
+table {
+  background-color: bisque;
+  text-align: center;
+}
+
+img {
+  size: 10px;
+}
+
+input[type="text"] {
+  background-color: white;
+  background-image: url("searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+footer {
+  display: block;
+  clear: both;
+  background-color: rgb(64, 160, 220);
+  text-align: center;
+  padding: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  aside,
+  section,
+  article {
+    width: 100%;
+  }
 }
